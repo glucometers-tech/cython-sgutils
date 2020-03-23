@@ -2,9 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
-from distutils.extension import Extension
-
-from setuptools import find_packages, setup
+from setuptools import Extension, find_packages, setup
 
 from Cython.Build import cythonize
 
@@ -28,7 +26,6 @@ setup(
         "License :: OSI Approved :: MIT License",
     ],
     packages=find_packages(),
-    setup_requires=["Cython"],
     ext_modules=cythonize(
         [
             Extension(
