@@ -1,0 +1,26 @@
+dist: xenial
+
+language: python
+
+matrix:
+  include:
+    - python: 3.7
+      env: PRE_COMMIT=true
+    - python: 3.8
+    - python: 3.9-dev
+      env: RUN_MYPY=false
+
+install:
+  - pip install .[all]
+
+addons:
+  apt:
+    packages:
+      - libsgutils2-dev
+
+script:
+  - py.test
+  - if [[ $RUN_MYPY != false ]]; then mypy sgutils; fi
+  - python setup.py bdist_wheel
+  - pip install ./dist/sgutils-*.whl
+  - if [[ $PRE_COMMIT ]]; then pre-commit install; pre-commit run --all-files; fi

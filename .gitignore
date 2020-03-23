@@ -1,0 +1,11 @@
+*.egg-info/
+*.pyc
+*~
+.cache
+.mypy_cache/
+/MANIFEST
+/dist/
+__pycache__/
+build
+.idea/
+*venv/
