@@ -35,6 +35,7 @@ setup(
         "License :: OSI Approved :: MIT License",
     ],
     packages=find_packages(),
+    package_data={"": ["*.pyx", "*.pxd"]},
     ext_modules=cythonize(
         [
             Extension(
