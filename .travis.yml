@@ -19,7 +19,6 @@ addons:
       - libsgutils2-dev
 
 script:
-  - py.test
   - if [[ $RUN_MYPY != false ]]; then mypy sgutils; fi
   - python setup.py bdist_wheel
   - pip install ./dist/cython_sgutils-*.whl
