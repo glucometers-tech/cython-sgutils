@@ -33,4 +33,5 @@ setup(
             )
         ]
     ),
+    extras_require={"dev": ["mypy", "pre-commit"],},
 )
