@@ -1,11 +1,12 @@
 *.egg-info/
 *.pyc
+*venv/
 *~
 .cache
+.idea/
 .mypy_cache/
 /MANIFEST
+/build/
 /dist/
 __pycache__/
-build
-.idea/
-*venv/
+sgutils/*.c
