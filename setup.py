@@ -4,7 +4,16 @@
 
 from setuptools import Extension, find_packages, setup
 
-from Cython.Build import cythonize
+try:
+    from Cython.Build import cythonize
+
+    src_extension = ".pyx"
+except ImportError:
+    src_extension = ".c"
+
+    def cythonize(extensions):
+        return extensions
+
 
 with open("README.md", "rt") as fh:
     long_description = fh.read()
@@ -29,7 +38,9 @@ setup(
     ext_modules=cythonize(
         [
             Extension(
-                "sgutils.csgutils", ["sgutils/csgutils.pyx"], libraries=["sgutils2"],
+                "sgutils.csgutils",
+                ["sgutils/csgutils" + src_extension],
+                libraries=["sgutils2"],
             )
         ]
     ),
