@@ -11,9 +11,7 @@ matrix:
       env: RUN_MYPY=false
 
 install:
-  # Required for setup.py to parse.
-  - pip install Cython
-  - pip install .
+  - pip install .[dev]
 
 addons:
   apt:
