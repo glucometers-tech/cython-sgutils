@@ -3,6 +3,9 @@
 # verbose regular expressions by Black.  Use [ ] to denote a significant space
 # character.
 
+[build-system]
+requires = ['cython']
+
 [tool.black]
 line-length = 88
 target-version = ['py37']
