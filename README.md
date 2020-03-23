@@ -1,3 +1,9 @@
+<p align="center">
+<a href="https://travis-ci.org/glucometers-tech/cython-sgutils/builds/"><img alt="build status" src="https://img.shields.io/travis/glucometers-tech/cython-sgutils"></a>
+<a href="https://github.com/glucometers-tech/cython-sgutils#license"><img alt="GitHub" src="https://img.shields.io/badge/license-MIT-green"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
+
 # cython-sgutils
 
 Cython-based wrapper for libsgutils, that allows sending generic SCSI
