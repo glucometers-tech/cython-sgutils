@@ -20,7 +20,6 @@ with open("README.md", "rt") as fh:
 
 setup(
     name="cython-sgutils",
-    version="1",
     description="Cython-based bindings for libsgutils",
     long_description=long_description,
     long_description_content_type="text/markdown",
