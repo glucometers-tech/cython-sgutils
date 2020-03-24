@@ -4,7 +4,12 @@
 # character.
 
 [build-system]
-requires = ['setuptools', 'wheel', 'cython']
+requires = [
+  'setuptools >= 42',
+  'wheel',
+  'Cython',
+  'setuptools_scm[toml]>=3.4',
+]
 
 [tool.black]
 line-length = 88
@@ -29,3 +34,5 @@ line_length = 88
 multi_line_output = 3
 include_trailing_comma = true
 known_first_party = ['sgutils']
+
+[tool.setuptools_scm]
