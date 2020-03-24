@@ -6,11 +6,18 @@ matrix:
   include:
     - python: 3.7
       env: PRE_COMMIT=true
+    - python: 3.7
+      env: CYTHON=false
     - python: 3.8
+    - python: 3.8
+      env: CYTHON=false
     - python: 3.9-dev
       env: RUN_MYPY=false
+    - python: 3.9-dev
+      env: CYTHON=false RUN_MYPY=false
 
 install:
+  - if [[ $CYTHON != false ]]; then pip install Cython; fi
   - pip install .[dev]
 
 addons:
