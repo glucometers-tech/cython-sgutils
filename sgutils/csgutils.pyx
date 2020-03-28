@@ -4,7 +4,7 @@
 
 from sgutils cimport libsgutils
 from sgutils import exceptions, structs
-    
+
 
 def simple_inquiry(fid, bint noisy=False, int verbose=0):
     cdef libsgutils.sg_simple_inquiry_resp resp
