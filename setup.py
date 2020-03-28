@@ -4,7 +4,8 @@
 
 from setuptools import Extension, find_packages, setup
 
-import setuptools_scm  # Ensure it's present.
+# Ensure it's present.
+import setuptools_scm  # noqa: F401
 from Cython.Build import cythonize
 
 setup(
@@ -17,5 +18,5 @@ setup(
             )
         ]
     ),
-    extras_require={"dev": ["mypy", "pre-commit", "Cython", "setuptools_scm"],},
+    extras_require={"dev": ["mypy", "pre-commit", "Cython", "setuptools_scm"]},
 )
