@@ -1,4 +1,5 @@
-# Copyright (c) 2020 The cython-sgutils authors.
+# SPDX-FileCopyrightText: 2020 The cython-sgutils Authors
+#
 # SPDX-License-Identifier: MIT
 
 import dataclasses

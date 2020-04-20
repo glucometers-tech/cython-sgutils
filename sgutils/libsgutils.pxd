@@ -1,7 +1,9 @@
-# Copyright (c) 2004-2019 Douglas Gilbert.
-# Copyright (c) 2020 The cython-sgutils authors.
-# SPDX-License-Identifier: MIT
 # cython: language_level=3
+
+# SPDX-FileCopyrightText: 2004-2019 Douglas Gilbert.
+# SPDX-FileCopyrightText: 2020 The cython-sgutils Authors
+#
+# SPDX-License-Identifier: MIT
 
 from libc.stdint cimport *
 

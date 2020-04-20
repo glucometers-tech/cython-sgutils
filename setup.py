@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# SPDX-FileCopyrightText: 2020 The cython-sgutils Authors
 #
 # SPDX-License-Identifier: MIT
 
