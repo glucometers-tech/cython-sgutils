@@ -1,5 +1,7 @@
-# Copyright (c) 2020 The cython-sgutils authors.
+# SPDX-FileCopyrightText: 2020 The cython-sgutils Authors
+#
 # SPDX-License-Identifier: MIT
+
 # cython: language_level=3
 
 from sgutils cimport libsgutils

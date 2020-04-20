@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2020 The cython-sgutils Authors
+
+SPDX-License-Identifier: MIT
+-->
+
 <p align="center">
 <a href="https://travis-ci.com/github/python-scsi/cython-sgutils"><img alt="build status" src="https://travis-ci.com/python-scsi/cython-sgutils.svg?branch=master"></a>
 <a href="https://github.com/python-scsi/cython-sgutils#license"><img alt="GitHub" src="https://img.shields.io/badge/license-MIT-green"></a>
